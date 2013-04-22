@@ -1,9 +1,5 @@
 package com.myeclipseide.ws;
 
-
-
-
-
 import com.myeclipseide.ws.Item;
 
 import java.util.ArrayList;
@@ -27,7 +23,6 @@ import org.hibernate.cfg.Configuration;
 
 import com.sun.jersey.spi.resource.Singleton;
 
-
 @Produces("application/xml")
 @Path("items")
 @Singleton
@@ -41,15 +36,7 @@ public class ItemsResource {
 	private	Session s;
 	
 	  public ItemsResource() {
-	    Item item = new Item();
-	  /*  item.setId(0);
-	    item.setStorename("StoreName1");
-	    item.setLocation("Fremont");
-	    item.setCurrency("USD");
-	    item.setItemdescription("Chair");
-	    item.setPrice(30);	    
-	    itemMap.put(0, item);
-	    */
+	 
 	       
 	  }
 	  
@@ -138,9 +125,6 @@ public class ItemsResource {
 
 	}
 
-
-
-
 	@Produces("text/plain")
 	@Consumes("application/xml")
 	@PUT
@@ -150,27 +134,11 @@ public class ItemsResource {
 		SessionFactory sf = cfg.buildSessionFactory();
 		Session s = sf.openSession();
 		Item item1= (Item)s.get(Item.class, item.getId());
-		Item item2 = new Item();
-		//item2 = item;
-		//item2.setItemdescription(item1.getItemdescription());
-		//item2.setStorename(item1.getStorename());
-		//if (item2.getStorename() =="")
-			item1.setStorename("Wallmart");
-		//item2.setLocation(item1.getLocation());
-		//item2.setPrice(item1.getPrice());
-		//item2.setCurrency(item1.getCurrency());
+		item1.setStorename("Wallmart");
 		itemMap.put(id, item1);
 		s.update(item1);
 		s.flush();
-//		/tx.commit();
 		s.close();
-		
-		//.setStorename("Different");
-		//Item i = new Item();	
-		//i=itemMap.get(cid);
-		//i.setStorename("UdpatedStorename3");
-		//itemMap.put(cid, i);
-		
 		return "updated";
 		
 	}

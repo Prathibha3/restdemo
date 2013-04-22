@@ -11,6 +11,9 @@ public class Item implements Serializable{
 	private String itemdescription;
 	private int price;
 	private String currency;
+	public Item(){
+		
+	}
 	public int getId() {
 		return id;
 	}
