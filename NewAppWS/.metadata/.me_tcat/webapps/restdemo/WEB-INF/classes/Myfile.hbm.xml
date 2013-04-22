@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+<class name="com.myeclipseide.ws.Item" table="Item">
+<id name="id" column="ID" type="integer">
+  <generator class="assigned"></generator>
+  </id>
+  <property name="Storename" column="Storename" type="string"></property>
+  <property name="location" column="location" type="string"></property>
+  <property name="itemdescription" column="itemdescription" type="string"></property>
+  <property name="currency" column="currency" type="string"></property>
+  <property name="price" column="price" type="integer"></property>
+</class>
+</hibernate-mapping>

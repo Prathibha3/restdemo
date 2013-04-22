@@ -1,0 +1,13 @@
+eclipse.preferences.version=1
+myeclipseTomcatServer.restdemo.IEARProjectName=
+myeclipseTomcatServer.restdemo.altContextRoot=/restdemo
+myeclipseTomcatServer.restdemo.contextRoot=/restdemo
+myeclipseTomcatServer.restdemo.deployIsOverProject=false
+myeclipseTomcatServer.restdemo.deploymentPath=C\:\\Users\\PrathibhaPuttiah\\Workspaces\\MyEclipse 10\\WallMart\\NewAppWS\\.metadata\\.me_tcat\\webapps\\restdemo.war
+myeclipseTomcatServer.restdemo.isDeployed=true
+myeclipseTomcatServer.restdemo.isExploded=false
+myeclipseTomcatServer.restdemo.isUptoDate=true
+myeclipseTomcatServer.restdemo.noFileCopy=false
+myeclipseTomcatServer.restdemo.shouldBackup=false
+myeclipseTomcatServer.restdemo.shouldOverwrite=true
+myeclipseTomcatServer.restdemo.type=WebDeployment

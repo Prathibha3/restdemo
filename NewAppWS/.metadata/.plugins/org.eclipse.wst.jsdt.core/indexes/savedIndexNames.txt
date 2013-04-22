@@ -1,0 +1,6 @@
+INDEX VERSION 1.122+C:\Users\PrathibhaPuttiah\Workspaces\MyEclipse 10\WallMart\NewAppWS\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+22530765.index
+863398591.index
+364539109.index
+427710690.index
+4286949075.index
